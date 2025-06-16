@@ -6,7 +6,7 @@ const BookCard = ({ book, favourite, onBookRemoved }) => {
   const handleRemoveBook = async (bookId) => {
     try {
       const response = await axios.put(
-        "http://localhost:4000/api/v1/remove-book-from-favourite",
+        "https://e-bookstore-mern.onrender.com/api/v1/remove-book-from-favourite",
         { bookid: bookId },
         {
           headers: {
