@@ -12,7 +12,7 @@ const UserOrderHistory = () => {
     const fetchOrderHistory = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:4000/api/v1/get-order-history",
+          "https://e-bookstore-mern.onrender.com/api/v1/get-order-history",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
