@@ -17,7 +17,7 @@ const Profile = () => {
   useEffect(() => {
     const fetch = async () => {
       if (isLoggedIn) {
-        const response = await axios.get("http://localhost:4000/api/v1/get-user-information", { headers: header });
+        const response = await axios.get("https://e-bookstore-mern.onrender.com/api/v1/get-user-information", { headers: header });
         setUserInfo(response.data.user);
         console.log(userInfo);
         
