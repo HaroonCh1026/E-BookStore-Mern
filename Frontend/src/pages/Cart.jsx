@@ -14,7 +14,7 @@ const Cart = () => {
     const fetchCartData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:4000/api/v1/get-cart",
+          "https://e-bookstore-mern.onrender.com/api/v1/get-cart",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -49,7 +49,7 @@ const Cart = () => {
   const deleteCartItem = async (itemId) => {
     try {
       const response = await axios.put(
-        "http://localhost:4000/api/v1/remove-from-cart",
+        "https://e-bookstore-mern.onrender.com/api/v1/remove-from-cart",
         { bookid: itemId },
         {
           headers: {
@@ -84,7 +84,7 @@ const Cart = () => {
       }
   
       const response = await axios.post(
-        "http://localhost:4000/api/v1/place-order",
+        "https://e-bookstore-mern.onrender.com/api/v1/place-order",
          { books: Cart.map((item) => item._id) },
         {
           headers: {
