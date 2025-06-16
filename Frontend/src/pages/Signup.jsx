@@ -24,7 +24,7 @@ const Signup = () => {
         alert("All fields are required");
       } else {
         const response = await axios.post(
-          "http://localhost:4000/api/v1/signup",
+          "https://e-bookstore-mern.onrender.com/api/v1/signup",
           Values
         );
         navigate("/login");
