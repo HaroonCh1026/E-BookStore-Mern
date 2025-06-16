@@ -20,7 +20,7 @@ const AllOrders = () => {
         };
 
         const response = await axios.get(
-          "http://localhost:4000/api/v1/get-all-orders",
+          "https://e-bookstore-mern.onrender.com/api/v1/get-all-orders",
           { headers }
         );
 
@@ -43,7 +43,7 @@ const AllOrders = () => {
       };
 
       await axios.put(
-        `http://localhost:4000/api/v1/update-status/${orderId}`,
+        `https://e-bookstore-mern.onrender.com/api/v1/update-status/${orderId}`,
         JSON.stringify({ status: newStatus }),
         { headers }
       );
