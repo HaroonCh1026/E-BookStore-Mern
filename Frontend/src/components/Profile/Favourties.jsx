@@ -18,7 +18,7 @@ const Favourites = () => {
           return;
         }
 
-        const response = await axios.get("http://localhost:4000/api/v1/get-favourite-books", {
+        const response = await axios.get("https://e-bookstore-mern.onrender.com/api/v1/get-favourite-books", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
