@@ -54,7 +54,7 @@ const Navbar = () => {
             src="https://cdn-icons-png.flaticon.com/128/10433/10433049.png"
             alt="logo"
           />
-          <h1 className="text-2xl font-semibold">BookHeaven</h1>
+          <h1 className="text-2xl font-semibold">E-BookStore</h1>
         </div>
 
         {/* Navigation Links */}
