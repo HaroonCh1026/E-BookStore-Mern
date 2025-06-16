@@ -23,7 +23,7 @@ const ViewBookDetails = () => {
     const fetchBooks = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4000/api/v1/get-book-by-id/${id}`
+          `https://e-bookstore-mern.onrender.com/api/v1/get-book-by-id/${id}`
         );
         setData(response.data.book); 
       } catch (error) {
@@ -49,7 +49,7 @@ const ViewBookDetails = () => {
       }
 
       const response = await axios.put(
-        "http://localhost:4000/api/v1/add-book-to-favourite",
+        "https://e-bookstore-mern.onrender.com/api/v1/add-book-to-favourite",
         { bookid: bookId },
         {
           headers: {
@@ -91,7 +91,7 @@ const ViewBookDetails = () => {
   
       
       const response = await axios.put(
-        "http://localhost:4000/api/v1/add-to-cart", 
+        "https://e-bookstore-mern.onrender.com/api/v1/add-to-cart", 
         { bookid: bookId },
         {
           headers: {
@@ -137,7 +137,7 @@ const ViewBookDetails = () => {
       };
 
       const response = await axios.delete(
-        "http://localhost:4000/api/v1/delete-book",
+        "https://e-bookstore-mern.onrender.com/api/v1/delete-book",
         {
           headers,
         }
