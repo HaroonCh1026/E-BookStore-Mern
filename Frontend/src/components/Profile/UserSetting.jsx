@@ -36,7 +36,7 @@ const UserSetting = () => {
     e.preventDefault();
     try {
       await axios.put(
-        "http://localhost:4000/api/v1/update-address",
+        "https://e-bookstore-mern.onrender.com/api/v1/update-address",
         { address: value.address },
         { headers }
       );
