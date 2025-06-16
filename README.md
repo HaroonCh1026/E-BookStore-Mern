@@ -78,3 +78,4 @@ Start the backend: node app.js or nodemon app.js.
 
 Start the frontend: npm run dev.
 
+Also Donot forget to change api to local host 4000 or whatever Port you used to run backend in all jsx files
