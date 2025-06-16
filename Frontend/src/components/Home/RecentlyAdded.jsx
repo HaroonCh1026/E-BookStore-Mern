@@ -10,7 +10,7 @@ const Recently = () => {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/api/v1/get-recent-books');
+        const response = await axios.get('https://e-bookstore-mern.onrender.com/api/v1/get-recent-books');
         setData(response.data.books);
       } catch (error) {
         console.error('Error fetching books:', error);
