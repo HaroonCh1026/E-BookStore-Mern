@@ -34,7 +34,7 @@ const UpdateBook = () => {
           }
       
           const response = await axios.put(
-            "http://localhost:4000/api/v1/update-book", 
+            "https://e-bookstore-mern.onrender.com/api/v1/update-book", 
             Data,
             { 
               headers: { 
@@ -68,7 +68,7 @@ const UpdateBook = () => {
         const fetchBooks = async () => {
           try {
             const response = await axios.get(
-              `http://localhost:4000/api/v1/get-book-by-id/${id}`
+              `https://e-bookstore-mern.onrender.com/api/v1/get-book-by-id/${id}`
             );
             setData(response.data.book); 
             console.log(response.data)
